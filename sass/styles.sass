@@ -1,0 +1,95 @@
+$color_rosa: #f17ca9
+$color_rosa2: #c62463
+$color_azul: #26324d
+$color_blanco: #fff
+
+$fuente_principal: 'Archer-book-pro'
+
+@keyframes shake
+    10%,
+    30%,
+    50%,
+    70%,
+    90% 
+        transform: translate3d(-10px, 0, 0)
+    
+    20%,
+    40%,
+    60%,
+    80% 
+        transform: translate3d(10px, 0, 0)
+
+@media all and (min-width: 1px)
+    body
+        font-family: $fuente_principal
+
+    form
+        background-image: url(../images/gif.jpg)
+        background-position: right 81%
+        background-repeat: no-repeat
+        background-size: 45%
+        margin-top: 5vh
+
+        input[type="text"], 
+        input[type="password"], 
+        input[type="email"], 
+        input[type="date"], 
+        input[type="number"], 
+        select, 
+        textarea
+            background-color: $color_blanco
+            appearance: none
+            border: 1px solid $color_azul
+            border-radius: 0
+            font-family: $fuente_principal
+            font-size: 1.6rem
+            padding: 10px
+
+        input[type="text"]::-webkit-input-placeholder,
+        input[type="password"]::-webkit-input-placeholder,
+        input[type="email"]::-webkit-input-placeholder,
+        input[type="date"]::-webkit-input-placeholder,
+        input[type="number"]::-webkit-input-placeholder,
+        select::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder
+            color: $color_azul
+            font-style: italic
+        
+        input[type="submit"]
+            background-color: $color_rosa
+            color: $color_blanco
+            letter-spacing: 4px
+            border: 0
+            padding: 15px 35px
+            font-family: Helvetica
+            font-size: 1.6rem
+            margin: 5vh auto
+            cursor: pointer
+
+        input[type="submit"]:hover
+            background-color:  $color_rosa2
+        
+        .shake,
+        .requerido
+            animation-name: shake
+            animation-direction: linear
+            animation-iteration-count: 1
+            animation-duration: .7s
+
+    aside
+        font-family: Helvetica
+        color: $color_azul
+        margin-top: 10vh
+        margin-bottom: 6vh
+        font-size: 1.1rem
+        opacity: .8
+
+@media all and (min-width: 585px)
+    form
+        background-position: right 85%
+        background-size: 40%
+
+@media all and (min-width: 1024px)
+    form
+        background-position: right 86%
+        background-size: 30%
