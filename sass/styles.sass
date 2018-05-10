@@ -1,4 +1,4 @@
-$color_rosa: #f17ca9
+$color_rosa: #d91c5c
 $color_rosa2: #c62463
 $color_azul: #26324d
 $color_blanco: #fff
@@ -24,10 +24,10 @@ $fuente_principal: 'Archer-book-pro'
         font-family: $fuente_principal
 
     form
-        background-image: url(../images/gif.jpg)
-        background-position: right 81%
-        background-repeat: no-repeat
-        background-size: 45%
+        // background-image: url(../images/gif.jpg)
+        // background-position: right 81%
+        // background-repeat: no-repeat
+        // background-size: 45%
         margin-top: 5vh
 
         input[type="text"], 
@@ -63,7 +63,7 @@ $fuente_principal: 'Archer-book-pro'
             padding: 15px 35px
             font-family: Helvetica
             font-size: 1.6rem
-            margin: 5vh auto
+            margin: 5vh auto 
             cursor: pointer
 
         input[type="submit"]:hover
@@ -75,19 +75,36 @@ $fuente_principal: 'Archer-book-pro'
             animation-direction: linear
             animation-iteration-count: 1
             animation-duration: .7s
+        
+        .logo
+            width: 100%
+            position: relative
+            z-index: 99
+            img
+                width: 36%
+        
+        .cabecera
+            margin-top: -50px
 
     aside
         font-family: Helvetica
         color: $color_azul
-        margin-top: 10vh
+        // margin-top: 10vh
         margin-bottom: 6vh
         font-size: 1.1rem
         opacity: .8
+        strong
+            display: block
+            font-size: 1.4rem
+            text-align: center
+            padding-bottom: 1vh
 
 @media all and (min-width: 585px)
     form
         background-position: right 85%
         background-size: 40%
+        .cabecera
+            margin-top: -90px
 
 @media all and (min-width: 1024px)
     form
