@@ -98,6 +98,49 @@ $fuente_principal: 'Archer-book-pro'
             font-size: 1.4rem
             text-align: center
             padding-bottom: 1vh
+    
+    .modal
+        .content
+            background-color: $color_blanco
+            padding: 10px
+        .close
+            width: 70%
+            a
+                background-color: $color_rosa
+                color: $color_blanco
+                width: 50px
+                height: 50px
+                font-size: 2rem
+        article
+            background-color: $color_blanco
+            height: 70vh
+            width: 70%
+            position: relative
+            .contenido
+                // background: red
+                overflow: auto
+                height: 65vh
+                h2
+                    margin: 5vh 0
+                h3
+                    margin: 17px 0
+                p
+                    width: 100%
+                    margin: 7px 0
+                ul
+                    margin-left: 2vw
+                    li
+                        padding: 0 15px
+                        margin: 5px 0
+                        position: relative
+                    li::before
+                        content: ""
+                        position: absolute
+                        top: 5px
+                        left: 0
+                        width: 7px
+                        height: 7px
+                        background-color: $color_rosa
 
 @media all and (min-width: 585px)
     form
