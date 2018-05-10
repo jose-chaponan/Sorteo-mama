@@ -7,7 +7,7 @@
     <title>Sorteo Mamá</title>
     <link rel="stylesheet" href="https://bastemp.com/css/bastemp.css?ver=1.0.2" />
     <link rel="stylesheet" href="http://navike21.com/fonts/archer/fonts.css" />
-    <link rel="stylesheet" href="css/styles.min.css?ver=1.0.5" />
+    <link rel="stylesheet" href="css/styles.min.css?ver=1.0.7" />
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="https://bastemp.com/js/bastemp.min.js?ver=1.0.3" charset="utf-8"></script>
@@ -19,14 +19,19 @@
             <img src="images/logo.svg" width="100%" alt="Larcomar">
         </a>
         <img src="images/cabecera.jpg" class="cabecera" alt="Cabecera" width="100%">
-        <input id="nombres" type="text" name="nombres" placeholder="Nombres:" class="w_100 required">
-        <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos:" class="w_100 required">
+        <label for="nombres" class="w_100 align_left">Nombres:</label>
+        <input id="nombres" type="text" name="nombres" class="w_100 required">
+        <label for="apellidos" class="w_100 align_left">Apellidos:</label>
+        <input id="apellidos" type="text" name="apellidos" class="w_100 required">
         <label for="fecha_nac" class="w_100 align_left">Fecha de Nacimiento:</label>
-        <input id="fecha_nac" type="date" name="fecha_nac" placeholder="Fecha de Nacimiento: dd/mm/aaaa" class="w_100 required">
-        <input id="email" type="text" name="email" placeholder="Email:" class="w_100 required email">
-        <input id="distrito" type="text" name="distrito" placeholder="Distrito:" class="w_100 required">
+        <input id="fecha_nac" type="date" name="fecha_nac" class="w_100 required">
+        <label for="email" class="w_100 align_left">Email:</label>
+        <input id="email" type="text" name="email" class="w_100 required email">
+        <label for="distrito" class="w_100 align_left">Distrito:</label>
+        <input id="distrito" type="text" name="distrito" class="w_100 required">
+        <label for="sexo" class="w_100 align_left">Sexo:</label>
         <select name="sexo" id="sexo" class="w_100 required">
-            <option value="">Sexo:</option>
+            <option value="">Seleccione:</option>
             <option value="Hombre">Hombre</option>
             <option value="Mujer">Mujer</option>
         </select>
